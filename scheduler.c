@@ -62,6 +62,8 @@ void analysis(char* s);
 
 void init()
 {
+    FILE *fp = NULL;
+    int user_process_tot;
     int cur_burstes;
     srand((unsigned int)time(NULL));
     process_tot = no_zero_rand(MAX_PROCESS);
@@ -77,6 +79,21 @@ void init()
         processes[i].arrival_time = rand() % MAX_ARRIVAL_TIME;
         processes[i].priority = rand() % MAX_PRIORITY;
     }
+    fp = fopen("input.txt", "r");
+    fscanf(fp,"%d\n",&user_process_tot);
+    if(user_process_tot != -1){
+        process_tot = user_process_tot;
+        for(int i = 0 ; i < process_tot; ++i){
+            fscanf(fp,"%d %d %d\n",&processes[i].burst_tot, &processes[i].arrival_time, &processes[i].priority);
+            for(int j = 0; j < processes[i].burst_tot; ++j){
+                fscanf(fp,"%d ",&processes[i].bursts[j]);
+            }
+            processes[i].burst_idx = 0;
+        }
+    }
+    fclose(fp);
+
+
     for (int i = 0; i < MAX_PROCESS; ++i)
     {
         original[i] = processes[i];
@@ -223,6 +240,7 @@ void init_cpu()
     for (int i = 0 ; i < MAX_RECORD; ++i)
         process_log[i] = 0;
     /* preemptive sjf */
+    /*
     process_tot = 4;
     processes[0].arrival_time = 0;
     processes[1].arrival_time = 2;
@@ -235,7 +253,7 @@ void init_cpu()
     processes[0].bursts[0] = 7;
     processes[1].bursts[0] = 4;
     processes[2].bursts[0] = 1;
-    processes[3].bursts[0] = 4;
+    processes[3].bursts[0] = 4;*/
     /*
      process_tot = 4;
      processes[0].arrival_time = 0;
@@ -310,6 +328,7 @@ void init_cpu()
      processes[4].bursts[0] = 3;
     */
    /*prioirty*/
+   /*
    process_tot = 5;
      processes[0].arrival_time = 0;
      processes[1].arrival_time = 0;
@@ -331,7 +350,7 @@ void init_cpu()
      processes[2].bursts[0] = 2;
      processes[3].bursts[0] = 1;
      processes[4].bursts[0] = 5;
-     
+     */
     /*
        process_tot = 6;
         processes[0].arrival_time = 0;
