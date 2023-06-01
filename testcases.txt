@@ -1,0 +1,139 @@
+    /* preemptive sjf */
+    /*
+    process_tot = 4;
+    processes[0].arrival_time = 0;
+    processes[1].arrival_time = 2;
+    processes[2].arrival_time = 4;
+    processes[3].arrival_time = 5;
+    processes[0].burst_tot = 1;
+    processes[1].burst_tot = 1;
+    processes[2].burst_tot = 1;
+    processes[3].burst_tot = 1;
+    processes[0].bursts[0] = 7;
+    processes[1].bursts[0] = 4;
+    processes[2].bursts[0] = 1;
+    processes[3].bursts[0] = 4;*/
+    /*
+     process_tot = 4;
+     processes[0].arrival_time = 0;
+     processes[1].arrival_time = 0;
+     processes[2].arrival_time = 0;
+     processes[3].arrival_time = 0;
+     processes[0].burst_tot = 1;
+     processes[1].burst_tot = 1;
+     processes[2].burst_tot = 1;
+     processes[3].burst_tot = 1;
+     processes[0].bursts[0] = 3;
+     processes[1].bursts[0] = 6;
+     processes[2].bursts[0] = 7;
+     processes[3].bursts[0] = 8;
+     */
+    /*
+     process_tot = 3;
+     processes[0].arrival_time = 0;
+     processes[1].arrival_time = 0;
+     processes[2].arrival_time = 0;
+     processes[0].burst_tot = 1;
+     processes[1].burst_tot = 1;
+     processes[2].burst_tot = 1;
+     processes[0].bursts[0] = 24;
+     processes[1].bursts[0] = 3;
+     processes[2].bursts[0] = 3;
+     */
+    /* HW5
+    process_tot = 5;
+     processes[0].arrival_time = 0;
+     processes[1].arrival_time = 0;
+     processes[2].arrival_time = 0;
+     processes[3].arrival_time = 0;
+     processes[4].arrival_time = 0;
+     processes[0].priority = 3;
+     processes[1].priority = 4;
+     processes[2].priority = 1;
+     processes[3].priority = 3;
+     processes[4].priority = 2;
+     processes[0].burst_tot = 1;
+     processes[1].burst_tot = 1;
+     processes[2].burst_tot = 1;
+     processes[3].burst_tot = 1;
+     processes[4].burst_tot = 1;
+     processes[0].bursts[0] = 2;
+     processes[1].bursts[0] = 1;
+     processes[2].bursts[0] = 8;
+     processes[3].bursts[0] = 4;
+     processes[4].bursts[0] = 5;
+     */
+    /*
+    process_tot = 5;
+     processes[0].arrival_time = 0;
+     processes[1].arrival_time = 0;
+     processes[2].arrival_time = 0;
+     processes[3].arrival_time = 0;
+     processes[4].arrival_time = 0;
+     processes[0].priority = 2;
+     processes[1].priority = 3;
+     processes[2].priority = 3;
+     processes[3].priority = 4;
+     processes[4].priority = 2;
+     processes[0].burst_tot = 1;
+     processes[1].burst_tot = 1;
+     processes[2].burst_tot = 1;
+     processes[3].burst_tot = 1;
+     processes[4].burst_tot = 1;
+     processes[0].bursts[0] = 4;
+     processes[1].bursts[0] = 5;
+     processes[2].bursts[0] = 8;
+     processes[3].bursts[0] = 7;
+     processes[4].bursts[0] = 3;
+    */
+    /*prioirty*/
+    /*
+    process_tot = 5;
+      processes[0].arrival_time = 0;
+      processes[1].arrival_time = 0;
+      processes[2].arrival_time = 0;
+      processes[3].arrival_time = 0;
+      processes[4].arrival_time = 0;
+      processes[0].priority = 3;
+      processes[1].priority = 1;
+      processes[2].priority = 4;
+      processes[3].priority = 5;
+      processes[4].priority = 2;
+      processes[0].burst_tot = 1;
+      processes[1].burst_tot = 1;
+      processes[2].burst_tot = 1;
+      processes[3].burst_tot = 1;
+      processes[4].burst_tot = 1;
+      processes[0].bursts[0] = 10;
+      processes[1].bursts[0] = 1;
+      processes[2].bursts[0] = 2;
+      processes[3].bursts[0] = 1;
+      processes[4].bursts[0] = 5;
+      */
+    /*
+       process_tot = 6;
+        processes[0].arrival_time = 0;
+        processes[1].arrival_time = 25;
+        processes[2].arrival_time = 30;
+        processes[3].arrival_time = 65;
+        processes[4].arrival_time = 100;
+        processes[5].arrival_time = 105;
+        processes[0].priority = 10;
+        processes[1].priority = 20;
+        processes[2].priority = 20;
+        processes[3].priority = 15;
+        processes[4].priority = 45;
+        processes[5].priority = 40;
+        processes[0].burst_tot = 1;
+        processes[1].burst_tot = 1;
+        processes[2].burst_tot = 1;
+        processes[3].burst_tot = 1;
+        processes[4].burst_tot = 1;
+        processes[5].burst_tot = 1;
+        processes[0].bursts[0] = 2;
+        processes[1].bursts[0] = 1;
+        processes[2].bursts[0] = 8;
+        processes[3].bursts[0] = 4;
+        processes[4].bursts[0] = 5;
+        processes[5].bursts[0] = 5;
+        */
