@@ -537,6 +537,7 @@ int select_process_from_ready_queue_Priority_RR()
         PRR[max_priority].cur_excute = cur_execute; //다음에 실행할 거 저장.
         break;
     }
+    ready_queue[next_idx] = 0;
     PRR[max_priority].cur_remaintime--; // 시간을 깎아줌.
     return next_idx;
 }
@@ -637,6 +638,7 @@ int select_process_from_ready_queue_Lottery()
         if (terminated_process[i] > 0)
             continue;
         lottery_tot += processes[i].priority;
+        ready_queue[i] = 0;
         if(lottery_tot >= cur_lottery) return i;
     }
 
